@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Focus on Today</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="Title">Focus on <span>Today</span></h1>
+      <div class="container">
+        <h2 class="subtitle">
+          Today <img class="sun-icon" src="Sun.svg" alt="sun" />
+        </h2>
+        <p class="progressbar-label">Just a step away, keep going!</p>
+        <div class="progressbar">
+          <div class="progressbar-level"><span>2/3 Completed</span></div>
+          <p class="Error-label">Please set all the 3 goals!</p>
+        </div>
+
+        <div class="goal-container">
+          <div class="checkbox">
+            <img class="check-icon" src="Vector.svg" alt="check" />
+          </div>
+          <input
+            id="first-input"
+            class="goal-label"
+            type="text"
+            placeholder="Add new goal..."
+          />
+        </div>
+        <div class="goal-container">
+          <div class="checkbox">
+            <img class="check-icon" src="Vector 1.svg" alt="check" />
+          </div>
+          <input
+            id="second-input"
+            class="goal-label"
+            type="text"
+            placeholder="Add new goal..."
+          />
+        </div>
+        <div class="goal-container">
+          <div class="checkbox">
+            <img class="check-icon" src="Vector 1.svg" alt="check" />
+          </div>
+          <input
+            id="third-input"
+            class="goal-label"
+            type="text"
+            placeholder="Add new goal..."
+          />
+        </div>
+        <p class="quote">“Move one step ahead, today!”</p>
+        <p class="footer">Made with ❤️ by Tushar Jetagi</p>
+      </div>
+    </main>
+  </body>
+</html>

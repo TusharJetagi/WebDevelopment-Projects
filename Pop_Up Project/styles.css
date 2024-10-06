@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #decdac;
+  font-family: "Inika", sans-serif;
+  overflow-x: hidden;
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button button {
+  font-size: 22px;
+  font-weight: 400;
+  background-color: #ebbf53;
+  color: #fefaf3;
+  padding: 15px 40px;
+  box-shadow: 0px 2.82px 2.82px 0px #00000040;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.PopUp_Container {
+  width: 650px;
+  height: 320px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-color: #fefaf3;
+  border-radius: 35px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 50px;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.open {
+  transform: scale(1);
+}
+
+a {
+  position: absolute;
+  right: 26px;
+  top: 15px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.PopUp_Container .close {
+  display: none;
+}
+
+.img-container {
+  width: 180px;
+  position: absolute;
+  top: -32px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.right {
+  margin-left: 230px;
+  width: 280px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+input {
+  border: 1px solid #afa187;
+  padding: 16px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: none;
+  background-color: #eee8dd;
+  width: 350px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #afa187;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  margin: 65px auto;
+}
+
+.email button {
+  padding: 14px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  border: 1px solid #ebbf53;
+  background-color: #ebbf53;
+  width: 180px;
+  color: #fefaf3;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.email button:hover{
+  background-color: #ecb62e;
+}

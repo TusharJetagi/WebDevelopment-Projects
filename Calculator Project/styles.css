@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232526;
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+.calculator-main {
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: .5rem .8rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 1rem;
+    cursor: default;
+    border: 1px solid rgba(128, 128, 128, 0.436);
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+input:hover {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.268);
+    padding: .3rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    background-color: rgba(220, 219, 220, 0.316);
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+    /* Shrinks button slightly when pressed */
+    box-shadow: none;
+    /* Removes shadow for the pressed effect */
+}
+
+.operation {
+    background-color: rgba(128, 128, 128, 0.282);
+}
+
+.clear-btn {
+    background-color: rgba(255, 69, 58, 0.8);
+    color: white;
+    font-weight: 400;
+}
+
+.equalTo-btn {
+    background-color: #4d90fe;
+    color: white;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+@media (max-width:478px) {
+
+    .calculator-main {
+        width: 350px;
+        padding: .8rem;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 76px);
+        gap: 0.5rem;
+    }
+
+    button {
+        padding: .2rem 0;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    input {
+        font-size: 2rem;
+    }
+
+}

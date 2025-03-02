@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #ecebeb;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+form input {
+  width: 60%;
+  max-width: 400px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  color: #333;
+  outline: none;
+}
+
+form button {
+  margin-left: 14px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #138065;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover,
+#show-more-btn:hover {
+  transform: scale(1.05);
+}
+
+.search-results {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.search-results .result {
+  width: 30%;
+  margin-bottom: 60px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.search-results .result img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.search-results .result img:hover {
+  opacity: 0.82;
+}
+
+.search-results .result a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+  display: block;
+  text-transform: capitalize;
+}
+
+#show-more-btn {
+  margin: 30px auto;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #008cba;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .search-results {
+    padding: 20px;
+  }
+  .search-results .result {
+    width: 46%;
+  }
+}
+
+@media (max-width: 478px) {
+  .search-results {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .search-results .result {
+    width: 100%;
+  }
+}

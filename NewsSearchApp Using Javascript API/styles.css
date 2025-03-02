@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: #2d4c50;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.03);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+#search-box {
+  max-width: 400px;
+  border: none;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #138065;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#blog-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 280px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #2d4c50;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+  font-size: 1.7rem;
+  color: #141414;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.blog-card p {
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits description to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 487px) {
+  .navbar {
+    padding: 1.3rem 20px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  #search-box {
+    width: 150px;
+    padding: 10px 10px;
+  }
+
+  #blog-container {
+    padding: 3rem 20px;
+  }
+
+  .blog-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 384px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+}
